@@ -19,6 +19,7 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  position: relative;
 }
 h3 {
   font-size: 30px;
@@ -68,6 +69,7 @@ li {
   color: #1098ad;
 }
 .main {
+  margin-bottom: 20px;
   background-color: #f7f7f7;
   padding: 20px;
   height: 40px;
@@ -101,4 +103,12 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+h2::after {
+  content: "Top";
+  font-size: 20px;
+  color: Black;
+  position: absolute;
+  top: -20;
+  right: 20;
 }
