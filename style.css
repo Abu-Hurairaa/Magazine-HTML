@@ -57,7 +57,7 @@ li {
   list-style: none;
 }
 .container {
-  width: 800px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -109,6 +109,34 @@ h2::after {
   font-size: 20px;
   color: Black;
   position: absolute;
-  top: -20;
-  right: 20;
+  top: -20px;
+  right: 20px;
+  background-color: yellow;
+  padding: 5px;
 }
+/* .author-img {
+  float: left;
+}
+.author {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  float: left;
+} */
+/* nav {
+  float: right;
+  margin-top: -24px;
+  display: inline;
+  margin-right: 150px;
+}
+nav a {
+  padding-left: 10px;
+}
+article {
+  background-color: #21d811;
+  width: 900px;
+}
+aside {
+  background-color: red;
+  width: 300px;
+  float: right;
+} */

@@ -8,6 +8,7 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
       body {
         font-family: sans-serif;
@@ -21,7 +22,7 @@
         background-color: rgb(219, 219, 219);
         text-align: center;
         padding: 10px;
-        /* color: black; */
+        color: black;
         font-size: 22px;
         text-transform: uppercase;
       }
@@ -58,18 +59,18 @@
       .price {
         font-weight: bold;
         font-size: 24px;
+        /* float: left; */
       }
       .shipping {
         text-transform: uppercase;
         color: #777;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 12px;
+        /* float: right; */
+        /* margin-top: 10px; */
       }
       .container {
         width: 825px;
-        /* margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto; */
         margin: 50px auto;
       }
       .sale {
@@ -87,48 +88,72 @@
         font-weight: bold;
         text-align: center;
       }
-
       .one {
         height: 20px;
         width: 20px;
-        margin-right: 10px;
         background-color: rgb(0, 0, 0);
-        display: inline-block;
       }
       .two {
         height: 20px;
         width: 20px;
-        margin-right: 10px;
         background-color: rgb(0, 113, 133);
-        display: inline-block;
       }
       .three {
         height: 20px;
         width: 20px;
         background-color: rgb(199, 0, 149);
-        display: inline-block;
-        margin-right: 10px;
       }
       .four {
         height: 20px;
         width: 20px;
         background-color: aqua;
-        display: inline-block;
-        margin-right: 10px;
       }
       .five {
         height: 20px;
         width: 20px;
         background-color: rgb(228, 0, 0);
-        display: inline-block;
-        margin-right: 10px;
       }
       .six {
         height: 20px;
         width: 20px;
         background-color: rgb(26, 219, 0);
-        display: inline-block;
-        margin-right: 10px;
+      }
+      img {
+        margin-right: 15px;
+      }
+      /* .pd {
+        clear: both;
+      }
+      .img {
+        float: left;
+        margin-right: 40px;
+      }
+      .productt {
+        width: 243px;
+        float: left;
+
+        padding: 20px;
+      }
+      .producttt {
+        width: 243px;
+        float: left;
+        margin-top: 30px;
+      } */
+      .product-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-right: 15px;
+      }
+      .colors {
+        display: flex;
+        gap: 10px;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
       }
     </style>
   </head>
@@ -139,30 +164,40 @@
       <article>
         <p class="sale">Sale</p>
         <h1>Converse Chuck Taylor All Star Low Top</h1>
-        <img src="related-3.jpg" height="160" alt="product-img" />
-        <p class="price">$50.00</p>
-        <p class="shipping">Free Shipping</p>
-        <p>
-          Ready to dress up or down,these classic canvas are an every day staple
-        </p>
-        <a href="#">More information &#8594;</a>
-        <div class="colors">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-          <div class="four"></div>
-          <div class="five"></div>
-          <div class="six"></div>
+        <div class="flex">
+          <img class="img" src="related-3.jpg" height="250" alt="product-img" />
+          <div class="productt">
+            <div class="product-price">
+              <p class="price">$50.00</p>
+              <p class="shipping">Free Shipping</p>
+            </div>
+            <p class="pd">
+              Ready to dress up or down,these classic canvas are an every day
+              staple
+            </p>
+            <a href="#">More information &#8594;</a>
+
+            <div class="colors">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+              <div class="four"></div>
+              <div class="five"></div>
+              <div class="six"></div>
+            </div>
+          </div>
+          <div class="producttt">
+            <h4>Product Detail</h4>
+            <ul>
+              <li>Lightweigt, durable canvas sneaker</li>
+              <li>Lightly padded footbed</li>
+              <li>Iconic Chuck Taylor</li>
+            </ul>
+          </div>
         </div>
-        <h4>Product Detail</h4>
-        <ul>
-          <li>Lightweigt, durable canvas sneaker</li>
-          <li>Lightly padded footbed</li>
-          <li>Iconic Chuck Taylor</li>
-        </ul>
         <button>Add To Cart</button>
       </article>
     </div>
-    <!-- <a href="index.html">Back</a> -->
+    <a href="index.html">Back</a>
   </body>
 </html>
